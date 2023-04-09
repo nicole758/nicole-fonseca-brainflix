@@ -1,0 +1,62 @@
+.header {
+    padding: 0 1rem;
+    display:flex;
+    flex-direction: column;
+
+    &__logo{
+        margin:1rem 0;
+        height:1.5rem;
+    }
+
+
+    &__content{
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    &__upload {
+        background-color: #0095FF;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top:1rem;
+        order:3;
+
+        &--text {
+            color: white;
+            margin-left: 5rem;
+        }
+    }
+    &__mainContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__profile--picture {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 50%;
+        order:2;
+        margin-left: auto;
+    }
+
+    &__search{
+        position: relative;
+        display:flex;
+        align-items: center;
+        order:1;
+        width:85%;
+
+        &--input{
+            padding-left: 2rem;
+            height: 1.7rem;
+            width:80%;
+
+        }
+        &--icon{
+        position:absolute;
+        padding:0 5px;
+        }
+    }
+}
