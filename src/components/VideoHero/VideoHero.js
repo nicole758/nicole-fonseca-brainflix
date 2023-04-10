@@ -4,9 +4,11 @@ import "./VideoHero.scss"
 
 function VideoHero() {
     return (
-        <video className= "hero__video" controls poster={image}>
-        </video>
+        <>
+        <video className= "hero__video" controls poster={image} />
+        </>
     )
+    
 }
 
 

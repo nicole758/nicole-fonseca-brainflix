@@ -1,0 +1,28 @@
+
+.nextVideo {
+    &__single{
+        display:flex;
+        align-items: center;
+        width:100%;
+        height: 10vh;
+    }
+    &__single--img{
+        height:3.5rem;
+        width: 35%;
+        margin:0.5rem 0.5rem;
+        border-radius: 0.25rem;
+        background-color: #E1E1E1;
+        object-fit:cover;
+    }
+
+    &__subContainer {
+        display:flex;
+        flex-direction: column;
+        width:65%;
+        &--title,&--channel{
+            margin: 0.2rem;
+            font-size:0.8rem;
+        
+        }
+    }
+}
