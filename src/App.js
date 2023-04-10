@@ -4,9 +4,9 @@ import VideoHero from "./components/VideoHero/VideoHero";
 import VideoDetails from "./components/VideoDetails/VideoDetails";
 import videos from "./data/videos.json";
 import { useState } from "react";
-import videoDetails from "./data/video-details.json"
-import NextVideos from "./components/NextVideos/NextVideos"
-
+import videoDetails from "./data/video-details.json";
+import NextVideos from "./components/NextVideos/NextVideos";
+import Comments from "./components/Comments/Comments";
 
 function App() {
   const [selectedVideo, setSelectedVideo] = useState(videoDetails[0]);

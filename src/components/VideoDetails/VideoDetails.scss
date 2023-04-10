@@ -1,0 +1,27 @@
+.selectedVideo__comment{
+    &--container{
+        padding:0 1rem;
+        display:flex;
+    }
+
+    &--left{
+        width:20%;
+    }
+
+    &--pic{
+        margin-top:0.5rem;
+        width:2.25rem;
+        height:2.25rem;
+        border-radius: 50%;
+        background-color: #E1E1E1;
+    }
+    &--top{
+        display:flex;
+    }
+
+    &--right{
+        width:80%;
+    }
+
+    
+}
