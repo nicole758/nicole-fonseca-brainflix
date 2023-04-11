@@ -1,0 +1,46 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/typography";
+@import "../../styles/partials/variables";
+
+.comment--flex{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 1rem;
+    border-top: 1px solid $mercury;
+}
+.comment {
+    display: flex;
+    border-bottom: 1px solid $mercury;
+
+    &__left {
+
+        &--pic {
+            margin-top:0.6rem;
+            margin-right:0.5rem;
+            width: 2.25rem;
+            height: 2.25rem;
+            background-color: $mercury;
+            border-radius: 50%;
+        }
+    }
+
+    &__right{
+       &--top {
+        display: flex;
+        justify-content: space-between;
+
+        &--name{
+            @include mobile-subheader;
+        }
+        &--date {
+            @include mobile-subheader;
+            color: $silver;
+        }
+    }
+    &--description{
+        @include mobile-body-copy;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+}

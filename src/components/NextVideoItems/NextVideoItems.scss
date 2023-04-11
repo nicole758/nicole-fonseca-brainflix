@@ -1,3 +1,5 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
 
 .nextVideo {
     &__single{
@@ -8,21 +10,40 @@
     }
     &__single--img{
         height:3.5rem;
-        width: 35%;
-        margin:0.5rem 0.5rem;
+        width: 6rem;
         border-radius: 0.25rem;
         background-color: #E1E1E1;
         object-fit:cover;
+
+        @include tablet{
+            height:3.8rem;
+        }
     }
 
     &__subContainer {
         display:flex;
         flex-direction: column;
-        width:65%;
-        &--title,&--channel{
-            margin: 0.2rem;
+        padding-left:1rem;
+        @include tablet{
+            width:23%;
+        }
+        &--title{
+        @include mobile-subheader;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin:0;
+        margin-top:0.2rem;
+        }
+        &--channel{
+            @include mobile-body-copy;
             font-size:0.8rem;
-        
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-top:0.3rem;
+
+            @include tablet{
+                @include tablet-body-copy;
+            }
         }
     }
 }

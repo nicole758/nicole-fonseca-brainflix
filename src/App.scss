@@ -1,0 +1,9 @@
+@import "../src/styles/partials/typography";
+@import "../src/styles/partials/variables";
+
+.App {
+  text-align: start;
+  font-family: AvenirNext;
+  color: $black;
+}
+

@@ -1,9 +1,9 @@
 import NextVideoItem from "../NextVideoItems/NextVideoItems";
 import "./NextVideos.scss";
-function NextVideos({clickHandler,videos}){
-    return(
+function NextVideos({ clickHandler, videos }) {
+    return (
         <div className="nextVideos">
-            <h2 className="nextVideos__header">Next Videos</h2>
+            <h2 className="nextVideos__header">NEXT VIDEOS</h2>
             {
                 videos.map(video => (
                     <NextVideoItem key={video.id} video={video} clickHandler={clickHandler} />

@@ -1,4 +1,9 @@
-.hero__video{
-    height:10rem;
-    margin-top:1rem;
+.hero__video {
+
+    &--image {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+
 }

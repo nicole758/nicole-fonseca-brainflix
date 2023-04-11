@@ -1,27 +1,79 @@
-.selectedVideo__comment{
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+.selectedVideo {
+
+    &__description{
+        @include mobile-body-copy;
+    }
+
     &--container{
-        padding:0 1rem;
-        display:flex;
+        margin: 0 1rem;
     }
 
-    &--left{
-        width:20%;
+    &--title{
+        @include mobile-header;
+
+    }
+    &__subContainer {
+        display: flex;
+
+        &--channel{
+            margin: 0.2rem 0.2rem;
+            @include mobile-subheader;
+
+        }
+        &--time {
+            margin: 0.2rem 0.2rem;
+            @include mobile-body-copy;
+            color: $silver;
+            @include tablet{
+                margin-left: 1rem;
+            }
+        }
+
+        &--num {
+            margin: 0.2rem 0.2rem;
+            display: flex;
+            flex-direction: column;
+            @include mobile-body-copy;
+            color: $silver;
+            @include tablet{
+                display:flex;
+                flex-direction: row;
+                margin-left:auto;
+            }
+
+            &-1 {
+                margin-right: 2rem;
+                @include tablet{
+                    display:flex;
+                    flex-direction: row;
+                }
+            }
+
+            &-3{
+                @include tablet{
+                    margin-left: 1rem;
+                }
+            }
+        }
+        &--count {
+            display: inline-block;
+            margin: 0.2rem 0.2rem;
+            @include mobile-body-copy;
+            color: $silver;
+        }
     }
 
-    &--pic{
-        margin-top:0.5rem;
-        width:2.25rem;
-        height:2.25rem;
-        border-radius: 50%;
-        background-color: #E1E1E1;
-    }
-    &--top{
-        display:flex;
+    &__commentlength{
+        @include mobile-subheader;
     }
 
-    &--right{
-        width:80%;
-    }
 
-    
 }
+
+
+
+
+
+

@@ -1,3 +1,10 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
 .nextVideos{
-    width:100%;
+
+    &__header{
+        @include mobile-subheader;
+        color:$silver;
+    }
+    padding: 0 1rem;
 }

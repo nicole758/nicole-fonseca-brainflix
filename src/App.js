@@ -1,12 +1,13 @@
 import Header from "./components/Header/Header";
-import './App.css';
+import './App.scss';
 import VideoHero from "./components/VideoHero/VideoHero";
 import VideoDetails from "./components/VideoDetails/VideoDetails";
 import videos from "./data/videos.json";
 import { useState } from "react";
 import videoDetails from "./data/video-details.json";
 import NextVideos from "./components/NextVideos/NextVideos";
-import Comments from "./components/Comments/Comments";
+import Comments from "./components/CommentForm/CommentForm";
+import PostedComments from "./components/PostedComments/PostedComments";
 
 function App() {
   const [selectedVideo, setSelectedVideo] = useState(videoDetails[0]);
@@ -20,8 +21,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <VideoHero />
+      <VideoHero selectedVideo={selectedVideo}/>
       <VideoDetails selectedVideo={selectedVideo}/>
+      <PostedComments selectedVideo={selectedVideo} />
       <NextVideos clickHandler={videoClick} videos={filteredVideos} />
     </div>
   );
