@@ -1,0 +1,10 @@
+@use './typography' as *;
+@use './variables' as *;
+@use './mixins' as *;
+
+*{
+    font-family: "Avenir","Next";
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
