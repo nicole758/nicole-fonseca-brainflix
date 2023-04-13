@@ -16,9 +16,13 @@
     }
     &__subContainer {
         display: flex;
+        border-top: 1px solid $mercury;
+        border-bottom: 1px solid $mercury;
+        padding: 12px 0;
+        
 
         &--channel{
-            margin: 0.2rem 0.2rem;
+            margin: 8px 0.2rem;
             @include mobile-subheader;
 
         }
@@ -35,6 +39,7 @@
             margin: 0.2rem 0.2rem;
             display: flex;
             flex-direction: column;
+            margin-left: 60px;
             @include mobile-body-copy;
             color: $silver;
             @include tablet{

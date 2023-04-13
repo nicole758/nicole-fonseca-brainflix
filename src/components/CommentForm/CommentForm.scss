@@ -1,54 +1,62 @@
 @import "../../styles/partials/mixins";
 @import "../../styles/partials/variables";
-.comment{
-    &__top{
-        width:20%;
+
+.comment {
+    &__top {
+        width: 20%;
     }
-    &__top--avatar{
-        width:2.25rem;
-        height:2.25rem;
+
+    &__top--avatar {
+        width: 2.25rem;
+        height: 2.25rem;
         border-radius: 50%;
     }
 
-    &__container{
-        display:flex;
-        padding:0 1rem;
+    &__container {
+        display: flex;
+        padding: 0 1rem;
 
-        &--main{
-            width:80%;
-            display:flex;
+        &--main {
+            width: 80%;
+            display: flex;
             flex-direction: column;
         }
 
-        &--title{
+        &--title {
             @include section-header;
             color: $silver;
 
         }
 
-        &--input{
-            width:100%;
-            padding:0;
+        &--input {
+            width: 100%;
+            padding: 0;
             resize: none;
-            height:4rem;
+            height: 4rem;
             background-color: $alabaster;
             border-radius: 0.25rem;
             @include mobile-body-copy;
 
-            &:focus{
+            &:focus {
                 border: $blue 1px solid;
             }
         }
 
-        
 
-        &--button{
-            width:100%;
-            height:1.7rem;
+
+        &--button {
+            width: 100%;
+            height: 1.7rem;
             background-color: $blue;
-            border:none;
-            border-radius:0.25rem;
+            border: none;
+            border-radius: 0.25rem;
             color: $white;
+            display: flex;
+            align-items: center;
+
+            &--text {
+                margin-left: 50px;
+            }
         }
     }
 }
