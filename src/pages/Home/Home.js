@@ -5,6 +5,7 @@ import { useState } from "react";
 import videoDetails from "../../data/video-details.json";
 import NextVideos from "../../components/NextVideos/NextVideos";
 import PostedComments from "../../components/PostedComments/PostedComments";
+import "./Home.scss";
 
 function Home() {
     const [selectedVideo, setSelectedVideo] = useState(videoDetails[0]);
@@ -19,9 +20,13 @@ function Home() {
     return (
         <>
             <VideoHero selectedVideo={selectedVideo} />
-            <VideoDetails selectedVideo={selectedVideo} />
-            <PostedComments selectedVideo={selectedVideo} />
-            <NextVideos clickHandler={videoClick} videos={filteredVideos} />
+            <div className="main">
+                <div className="main__main">
+                    <VideoDetails selectedVideo={selectedVideo} />
+                    <PostedComments selectedVideo={selectedVideo} />
+                </div>
+                <NextVideos clickHandler={videoClick} videos={filteredVideos} />
+            </div>
         </>
     );
 }

@@ -1,0 +1,7 @@
+@import "../../styles/partials/mixins";
+
+.main{
+    @include desktop{
+        display:flex;
+    }
+}
