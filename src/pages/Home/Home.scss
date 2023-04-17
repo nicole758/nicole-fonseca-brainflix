@@ -4,4 +4,16 @@
     @include desktop{
         display:flex;
     }
+
+    &__main{
+        @include desktop{
+            width:70%;
+        }
+    }
+
+    &__sub{
+        @include desktop{
+            width:30%;
+        }
+    }
 }

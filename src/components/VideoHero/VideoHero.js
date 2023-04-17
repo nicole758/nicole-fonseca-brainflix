@@ -1,12 +1,10 @@
-import "./VideoHero.scss"
-// import fullScreen from "../../assets/images/fullscreen.svg";
-// import pause from "../../assets/images/pause.svg";
-// import volumeUp from "../../assets/images/volume_up.svg"
-
+import "./VideoHero.scss";
 
 
 function VideoHero({ selectedVideo }) {
-    const { image, video} = selectedVideo;
+    
+    const { image, video } = selectedVideo;
+    
     return (
         <section className="hero">
             <div className="hero__video">

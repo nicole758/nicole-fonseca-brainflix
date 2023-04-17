@@ -2,10 +2,17 @@ import view from "../../assets/images/views.svg";
 import like from "../../assets/images/likes.svg";
 import CommentForm from "../CommentForm/CommentForm";
 import "./VideoDetails.scss";
+import { useEffect,useState } from "react";
+import axios from "axios";
 
 
-function VideoDetails({ selectedVideo }) {
-    const { title, channel, timestamp, views, likes, description,comments} = selectedVideo;
+function VideoDetails({selectedVideo}) {
+    if (!selectedVideo) {
+        return <div>Loading...</div>;
+      }
+    
+
+    const { title, channel, timestamp, views, likes, description, comments } = selectedVideo;
 
     return (
         <main className="selectedVideo--container">

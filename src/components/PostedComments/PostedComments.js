@@ -1,11 +1,15 @@
 import "./PostedComments.scss";
 
-function PostedComments({ selectedVideo }){
+function PostedComments({selectedVideo}){
+    if (!selectedVideo) {
+        return <div>Loading...</div>;
+      }
+
     const {comments} = selectedVideo;
     return(
         <div className="comment--flex">
         {comments.map(comment =>
-            <div className="comment">
+            <div key={comment.id} className="comment">
                 <div className="comment__left">
                     <img className="comment__left--pic" />
                 </div>

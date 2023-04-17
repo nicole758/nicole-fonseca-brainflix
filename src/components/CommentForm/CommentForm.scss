@@ -4,6 +4,9 @@
 .comment {
     &__top {
         width: 20%;
+        @include tablet{
+            width:auto;
+        }
     }
 
     &__top--avatar {
@@ -15,17 +18,30 @@
     &__container {
         display: flex;
         padding: 0 1rem;
+        @include tablet{
+            justify-content: space-between;
+        }
 
         &--main {
             width: 80%;
             display: flex;
             flex-direction: column;
+
+            @include tablet{
+                margin-right: auto;
+                margin-left: 20px;
+            }
         }
 
         &--title {
             @include section-header;
             color: $silver;
 
+        }
+        &--flex{
+            @include tablet{
+                display:flex;
+            }
         }
 
         &--input {
@@ -36,6 +52,10 @@
             background-color: $alabaster;
             border-radius: 0.25rem;
             @include mobile-body-copy;
+
+            @include tablet{
+                height:2rem;
+            }
 
             &:focus {
                 border: $blue 1px solid;
@@ -53,6 +73,11 @@
             color: $white;
             display: flex;
             align-items: center;
+
+            @include tablet{
+                width:10rem;
+                height:2rem;
+            }
 
             &--text {
                 margin-left: 50px;

@@ -11,12 +11,14 @@ function CommentForm() {
             <div className="comment__container--main">
                 <label className="comment__container--title">
                     JOIN THE CONVERSTATION
-                    <textarea className="comment__container--input" placeholder="Add a new comment"></textarea>
                 </label>
+                <div className="comment__container--flex">
+                <textarea className="comment__container--input" placeholder="Add a new comment"></textarea>
                 <button className="comment__container--button">
                     <img className="comment__container--button--img" src={commentIcon} alt="comment button" />
                     <span className="comment__container--button--text">COMMENT</span>
                 </button>
+                </div>
             </div>
         </form>
     );
