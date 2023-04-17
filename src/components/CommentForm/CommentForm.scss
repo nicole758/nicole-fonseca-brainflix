@@ -2,6 +2,8 @@
 @import "../../styles/partials/variables";
 
 .comment {
+    margin: 0.5rem 0;
+
     &__top {
         width: 20%;
         @include tablet{
@@ -18,6 +20,7 @@
     &__container {
         display: flex;
         padding: 0 1rem;
+        margin-bottom: 1rem;
         @include tablet{
             justify-content: space-between;
         }
@@ -30,6 +33,7 @@
             @include tablet{
                 margin-right: auto;
                 margin-left: 20px;
+                width:100%;
             }
         }
 
@@ -55,6 +59,8 @@
 
             @include tablet{
                 height:2rem;
+                width:80%;
+                margin-right:1.5rem;
             }
 
             &:focus {
@@ -77,10 +83,24 @@
             @include tablet{
                 width:10rem;
                 height:2rem;
+                margin-left: auto;
+                width: 20%;
+            }
+
+            &--img{
+                @include tablet{
+                margin-left: 0.5rem;
+                height: 1rem;
+                }
             }
 
             &--text {
-                margin-left: 50px;
+                @include mobile-labels;
+                margin-left: 3.125rem;
+                @include tablet{
+                    margin-left:0.625rem;
+                }
+
             }
         }
     }

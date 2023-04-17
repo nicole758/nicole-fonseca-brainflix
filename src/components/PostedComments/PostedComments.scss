@@ -7,10 +7,17 @@
     flex-direction: column;
     margin: 0.5rem 1rem;
     border-top: 1px solid $mercury;
+    @include tablet{
+        margin-top: 1.5rem;
+    }
 }
 .comment {
     display: flex;
     border-bottom: 1px solid $mercury;
+
+    @include tablet{
+        margin: 1rem 0;
+    }
 
     &__left {
 
@@ -25,6 +32,9 @@
     }
 
     &__right{
+        @include tablet{
+            width:100%;
+        }
        &--top {
         display: flex;
         justify-content: space-between;
@@ -41,6 +51,9 @@
         @include mobile-body-copy;
         margin: 0;
         margin-bottom: 0.5rem;
+        @include tablet{
+            margin-bottom:1rem;
+        }
     }
 }
 }

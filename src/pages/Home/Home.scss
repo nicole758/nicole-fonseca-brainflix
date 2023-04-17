@@ -1,8 +1,10 @@
 @import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
 
 .main{
     @include desktop{
         display:flex;
+        margin: 0 6rem;
     }
 
     &__main{

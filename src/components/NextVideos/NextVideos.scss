@@ -4,6 +4,16 @@
 @import "../../styles/partials/variables";
 
 .nextVideo{
+    @include desktop{
+        border-left: 1px solid $mercury;
+    }
+
+    &__title{
+        color: $silver;
+        @include mobile-labels;
+        margin-bottom:1rem;
+
+    }
 
     &__item{
         color: $black;

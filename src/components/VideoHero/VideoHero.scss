@@ -1,8 +1,18 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/globals";
+@import "../../styles/partials/variables";
+
+
 .hero__video {
 
     &--image {
         width: 100%;
         margin-top: 1rem;
+
+        @include desktop{
+            padding: 0px 10rem;
+            background-color: black;
+        }
     }
 
 

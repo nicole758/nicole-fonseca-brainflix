@@ -12,6 +12,9 @@
     @include tablet{
         flex-direction: row;
     }
+    @include desktop{
+        margin: 0 6rem;
+    }
 
     &__logo {
         margin: 1rem 0;
@@ -62,6 +65,7 @@
 
         &--icon{
             height:1rem;
+            margin-left: 0.4rem;
         }
     }
 
@@ -93,7 +97,7 @@
         &--input {
             padding-left: 2rem;
             height: 1.7rem;
-            width: 80%;
+            width: 95%;
             border: 1px solid $mercury;
             background-color: $alabaster;
         }
